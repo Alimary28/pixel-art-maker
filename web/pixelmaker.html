@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="make some art">
+    <meta name="keywords" content="art, pixel, design, make">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Art Maker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" type="text/css" href="pixelstyle.css">
+
+</head>
+<body>
+<!--a simple web page that creates a grid of squares-->
+<div class="anim">
+<h1>Pixel Art Maker</h1>
+
+<p><b>Prepare to make art with pixels !</b></p><br><br>
+</div>
+
+    <form id="size">
+        Grid Height:
+        <input type="number" id="inputH" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputW" name="width" min="1" value="1">
+        <input type="submit" id="submit" value="Submit" ><br><br>
+    </form>
+<h2>Pick a color</h2>
+<input type="color" id="pickColor" name="favcolor" value="#ff0000">
+
+<h2>Design canvas</h2>
+<table id="pixelCanvas"></table>
+<script src="artmaker.js"></script>
+
+</body>
+</html>

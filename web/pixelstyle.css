@@ -1,0 +1,81 @@
+body {
+    text-align: center;
+    background-color: gainsboro;
+    background-image: url('https://static4.depositphotos.com/1001378/374/v/950/depositphotos_3749946-stock-illustration-abstract-green-square-background-eps10.jpg');
+    opacity: 0.5%;
+}
+
+div.anim {
+    overflow: hidden;/*the content is not revealed until the animation*/
+    border-right: 3px solid rgb(34, 139, 34);/*the typewriter cursor*/
+    white-space: nowrap;/*keeps the content on a single line */
+    margin: 0 auto;/*gives that scrolling effect*/
+    letter-spacing: 1em;/*adjust as needed*/
+    animation: typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+h1 {
+    font-family: Monoton;
+    font-size: 30px;
+    margin: 0.2em;
+}
+/*the typing effect*/
+@keyframes typing {
+    from{ width: 0}
+    to{ width: 100%}
+}
+/*the typewriter cursor effect*/
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    10% {border-color: forestgreen;}
+}
+div {
+    margin: auto;
+}
+#inputH {
+    padding: 13px 25px;
+    margin: 10px;
+    font-size: 16px;
+}
+#inputW{
+    padding: 13px 25px;
+    margin: 10px;
+    font-size: 16px;
+}
+#submit{
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin: 4px 2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#submit :focus {
+    background-color: forestgreen;
+}
+#pickColor{
+    padding: 10px 20px;
+    margin: 4px 2px;
+}
+table,
+tr,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+}
+input[type="number"] {
+    width: 5em;
+}
